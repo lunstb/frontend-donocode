@@ -12,7 +12,7 @@ function RecipientAddMessage() {
     const handleSend = () => {
         let dateReceived = new Date();
         if (message) {
-            fetch('/qr/sendmessage/' + qrId, {
+            fetch('https://donocode.uc.r.appspot.com/qr/sendmessage/' + qrId, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ function RecipientAddMessage() {
             })  
         }
 
-        fetch('/api/qr/register-receipt/' + qrId, {
+        fetch('https://donocode.uc.r.appspot.com/api/qr/register-receipt/' + qrId, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

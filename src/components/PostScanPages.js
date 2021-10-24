@@ -5,7 +5,7 @@ function PostScanPages() {
     let { qrId } = useParams()    
 
     useEffect(() => {
-        fetch('api/qr/getstatus/' + qrId)
+        fetch('https://donocode.uc.r.appspot.com/api/qr/getstatus/' + qrId)
         .then(res => res.json())
         .then(qrStatus => {
             if (qrStatus === 0)

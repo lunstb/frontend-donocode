@@ -123,7 +123,7 @@ export default function Settings(){
 
 
     useEffect(() => {
-      fetch("/api/user/profile/" + fireId)
+      fetch("https://donocode.uc.r.appspot.com/api/user/profile/" + fireId)
       .then(res => res.json())
       .then(data => {
         setUser(data);

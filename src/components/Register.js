@@ -217,7 +217,7 @@ const Register = () => {
                 lastName,
                 phone
             };
-            await fetch("/api/user/createuser", {
+            await fetch("https://donocode.uc.r.appspot.com/api/user/createuser", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

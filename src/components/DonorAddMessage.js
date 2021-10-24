@@ -16,7 +16,7 @@ function DonorAddMessage() {
             donorMessage: message,
         }
         try {
-            fetch("/api/qr/donation/new-unlinked", {
+            fetch("https://donocode.uc.r.appspot.com/api/qr/donation/new-unlinked", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

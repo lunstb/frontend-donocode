@@ -224,7 +224,7 @@ function HowManyCodes(classes, currentPage, setCurrentPage, qrCodeNum, setQrCode
               }
 
               // make a fetch request to the server to get the qr codes
-              fetch(`/api/qr/generatecode/${e.target.value}`) // replace with http://donocode.com/qrcode/generatecode
+              fetch(`https://donocode.uc.r.appspot.com/api/qr/generatecode/${e.target.value}`) // replace with http://donocode.com/qrcode/generatecode
                   .then(response => response.json())
                   .then(data => {
                     setQrCodes(data)

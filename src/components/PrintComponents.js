@@ -57,7 +57,7 @@ export const PrintContent = React.forwardRef((props, ref) => {
             "message": ""
           }
         }
-        fetch("/api/qr/register", {
+        fetch("https://donocode.uc.r.appspot.com/api/qr/register", {
           method: "POST",
           headers: {
               "Content-Type": "application/json"
