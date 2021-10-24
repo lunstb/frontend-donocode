@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
 
 async function ShowDonations() {
     let donationsByDate = {};
-    await fetch(`http://localhost:3001/api/user/getdonations/${firebase.auth().currentUser.uid}`) // replace with http://donocode.com/qrcode/generatecode
+    await fetch(`/api/user/getdonations/${firebase.auth().currentUser.uid}`) // replace with http://donocode.com/qrcode/generatecode
                   .then(response => response.json())
                   .then(data => {
                       data.forEach(element => {

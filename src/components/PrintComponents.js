@@ -57,7 +57,7 @@ export const PrintContent = React.forwardRef((props, ref) => {
             "message": ""
           }
         }
-        fetch("http://localhost:3001/api/qr/register", {
+        fetch("/api/qr/register", {
           method: "POST",
           headers: {
               "Content-Type": "application/json"
